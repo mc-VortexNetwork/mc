@@ -8,7 +8,7 @@ ip: `mc-vortexnetwork.aternos.me:14899`
 
 **Bedrock:**
 
-ip: `mc-vortexnetwork.aternos.me:14899`
+ip: `mc-vortexnetwork.aternos.me:14899`  
 porta: `14899`
 
 Se estiver jogando no Minecraft Bedrock basta ir em nosso [Site](https://mc-vortexnetwork.github.io/mc/) e apertar em Jogar.
