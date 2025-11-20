@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Loja - Vortex Network</title>
+  <meta name="author" content="Eveson Emanuel" />
+  <meta name="description" content="Loja oficial do Vortex Network - VIPs e Kits para Minecraft" />
+  <meta name="keywords" content="Minecraft, Vortex Network, VIP, Kits, Loja" />
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&display=swap" rel="stylesheet" />
+  <style>
+    /* Reset */
+    * {
+      margin: 0; padding: 0; box-sizing: border-box;
+      font-family: 'Orbitron', sans-serif;
+    }
+    body {
+      background: linear-gradient(135deg, #1b002b, #3a007d);
+      color: #eee;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+    header {
+      padding: 20px;
+      background: rgba(255,255,255,0.05);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1px solid rgba(255,255,255,0.1);
+    }
+    header .logo {
+      font-size: 1.8rem;
+      font-weight: 700;
+      background: linear-gradient(90deg, #b400f6, #6d00ff);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    nav a {
+      color: #ccc;
+      margin-left: 20px;
+      text-decoration: none;
+      font-weight: 600;
+      transition: color 0.3s;
+    }
+    nav a:hover {
+      color: #b400f6;
+    }
+    main {
+      flex: 1;
+      padding: 40px 20px;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+    h1 {
+      font-size: 3rem;
+      margin-bottom: 30px;
+      background: linear-gradient(90deg, #b400f6, #6d00ff);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      text-align: center;
+    }
+    .products {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 30px;
+    }
+    .card {
+      background: rgba(255,255,255,0.05);
+      border: 1px solid rgba(255,255,255,0.1);
+      border-radius: 12px;
+      padding: 25px;
+      box-shadow: 0 0 10px rgba(180,0,246,0.3);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 10px 20px rgba(180,0,246,0.6);
+    }
+    .card h2 {
+      font-size: 1.6rem;
+      margin-bottom: 15px;
+      color: #b400f6;
+    }
+    .card p {
+      font-size: 1rem;
+      color: #ccc;
+      margin-bottom: 20px;
+      min-height: 60px;
+    }
+    .price {
+      font-weight: 700;
+      font-size: 1.2rem;
+      margin-bottom: 20px;
+      color: #6d00ff;
+    }
+    .btn-buy {
+      display: inline-block;
+      padding: 12px 30px;
+      background: #8f00ff;
+      color: white;
+      font-weight: 700;
+      border-radius: 8px;
+      text-decoration: none;
+      transition: background 0.3s ease;
+      text-align: center;
+      cursor: pointer;
+    }
+    .btn-buy:hover {
+      background: #b400f6;
+    }
+    @media (max-width: 600px) {
+      h1 {
+        font-size: 2.2rem;
+      }
+      .products {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">Vortex Network</div>
+    <nav>
+      <a href="index.html">Início</a>
+      <a href="login.html">Entrar</a>
+      <a href="register.html">Registrar</a>
+    </nav>
+  </header>
+  <main>
+    <h1>Loja Oficial - VIPs & Kits</h1>
+    <section class="products">
+      <div class="card">
+        <h2>VIP Barão</h2>
+        <p>Acesso a comandos exclusivos, kits poderosos e benefícios VIP.</p>
+        <div class="price">R$ 39,90</div>
+        <a href="https://w.app/vortexnetwork" class="btn-buy">Comprar</a>
+      </div>
+      <div class="card">
+        <h2>Kit Full Netherite</h2>
+        <p>Kit completo com armadura e ferramentas netherite encantadas.</p>
+        <div class="price">R 39,90</div>
+        <a href="https://w.app/vortexnetwork" class="btn-buy">Comprar</a>
+      </div>
+      <div class="card">
+        <h2>VIP Imperial</h2>
+        <p>VIP completo com kits diários, comandos exclusivos e mais.</p>
+        <div class="price">R59,90</div>
+        <a href="https://w.app/vortexnetwork" class="btn-buy">Comprar</a>
+      </div>
+      <div class="card">
+        <h2>Kit Starter</h2>
+        <p>Kit básico para iniciantes com ferramentas essenciais.</p>
+        <div class="price">R 19,90</div>
+        <a href="https://w.app/vortexnetwork" class="btn-buy">Comprar</a>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
