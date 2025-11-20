@@ -4,11 +4,11 @@
 ### Como entrar no servidor?
 **Java:**
 
-ip: `mc-vortexnetwork.aternos.me:14899`
+ip: `vortexnetwork.bed.ovh:15023`
 
 **Bedrock:**
 
-ip: `mc-vortexnetwork.aternos.me`  
-porta: `14899`
+ip: `vortexnetwork.bed.ovh`  
+porta: `15023`
 
 Se estiver jogando no Minecraft Bedrock basta ir em nosso [Site](https://mc-vortexnetwork.github.io/mc/) e apertar em Jogar.
