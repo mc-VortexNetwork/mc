@@ -4,11 +4,11 @@
 ### Como entrar no servidor?
 **Java:**
 
-ip: `vortexnetwork.bed.ovh:15023`
+ip: `lunexiamc.bed.ovh:15023`
 
 **Bedrock:**
 
-ip: `vortexnetwork.bed.ovh`  
+ip: `lunexiamc.bed.ovh`  
 porta: `15023`
 
-Se estiver jogando no Minecraft Bedrock basta ir em nosso [Site](https://mc-vortexnetwork.github.io/mc/) e apertar em Jogar.
+Se estiver jogando no Minecraft Bedrock basta ir em nosso [Site](https://valnyxorlabs.vercel.app/) e apertar em Jogar.
