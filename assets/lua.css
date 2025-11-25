@@ -1,0 +1,250 @@
+/* ==========================
+   LUNEXIAMC - LUA.CSS
+   Tema: Escuro + Azul Profissional
+=========================== */
+
+/* -------------------- FONTS -------------------- */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: #0A0F1E;
+    color: #fff;
+    scroll-behavior: smooth;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* -------------------- HEADER -------------------- */
+header {
+    width: 100%;
+    padding: 20px 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(10,15,30,0.8);
+    backdrop-filter: blur(10px);
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+    transition: 0.3s;
+}
+
+header .logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+header .logo img {
+    width: 50px;
+    height: 50px;
+}
+
+header .logo h1 {
+    color: #4da3ff;
+    font-size: 28px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+
+nav ul li a {
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+nav ul li a:hover {
+    color: #79bbff;
+}
+
+/* MENU MOBILE */
+.menu-btn {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    gap: 6px;
+}
+
+.menu-btn div {
+    width: 28px;
+    height: 3px;
+    background: #fff;
+}
+
+@media (max-width:870px) {
+    nav ul {
+        position: absolute;
+        top: 80px;
+        right: 0;
+        background: #0A0F1E;
+        width: 230px;
+        flex-direction: column;
+        gap: 20px;
+        padding: 30px;
+        display: none;
+        border-left: 1px solid #1a2945;
+    }
+
+    nav ul.active {
+        display: flex;
+        animation: fadeIn 0.5s ease forwards;
+    }
+
+    .menu-btn { display: flex; }
+}
+
+/* -------------------- HERO -------------------- */
+.hero {
+    height: 100vh;
+    padding: 0 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background: linear-gradient(120deg, #0A0F1E, #0F1F3A);
+    position: relative;
+}
+
+.hero-logo {
+    width: 120px;
+    margin-bottom: 20px;
+    animation: logoBounce 1s ease forwards;
+}
+
+.hero h2 {
+    font-size: 52px;
+    font-weight: 700;
+    color: #4da3ff;
+    margin-bottom: 15px;
+}
+
+.hero p {
+    margin: 15px auto 25px auto;
+    max-width: 600px;
+    font-size: 18px;
+    opacity: 0.9;
+}
+
+.btn {
+    display: inline-block;
+    background: #4da3ff;
+    padding: 14px 40px;
+    color: #0A0F1E;
+    font-weight: 600;
+    font-size: 18px;
+    border-radius: 8px;
+    transition: 0.3s;
+    animation: pulse 2s infinite;
+}
+
+.btn:hover {
+    background: #79bbff;
+    transform: scale(1.05);
+}
+
+/* -------------------- SECTIONS -------------------- */
+section {
+    padding: 100px 10%;
+}
+
+h3.section-title {
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 50px;
+    color: #4da3ff;
+}
+
+/* SOBRE */
+.sobre {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    flex-wrap: wrap;
+}
+
+.sobre img {
+    width: 380px;
+    border-radius: 10px;
+    transition: transform 0.3s;
+}
+
+.sobre img:hover {
+    transform: scale(1.05);
+}
+
+.sobre-texto {
+    max-width: 500px;
+    line-height: 1.6;
+}
+
+/* CARDS DE MODOS E RANKS */
+.cards-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+    gap: 30px;
+}
+
+.card {
+    background: #11172b;
+    padding: 25px;
+    border-radius: 10px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 25px rgba(77,163,255,0.3);
+}
+
+.card h4 {
+    margin-bottom: 10px;
+    color: #4da3ff;
+}
+
+/* -------------------- ANIMAÇÕES -------------------- */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes pulse {
+    0%,100% { transform: scale(1); box-shadow: 0 0 0 rgba(77,163,255,0.5);}
+    50% { transform: scale(1.05); box-shadow: 0 0 20px rgba(77,163,255,0.7);}
+}
+
+@keyframes logoBounce {
+    from { transform: translateY(-20px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
+
+.hidden {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: 0.8s ease-out;
+}
+
+.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* RESPONSIVO */
+@media(max-width:768px) {
+    .hero h2 { font-size: 42px; }
+    .hero p { font-size: 16px; }
+    .sobre img { width: 100%; }
+    .sobre-texto { max-width: 100%; }
+}
