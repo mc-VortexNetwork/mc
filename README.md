@@ -1,4 +1,4 @@
-## Repositório do servidor de Minecraft Vortex Network
+## Repositório do servidor de Minecraft LunexiaMC
 
 
 ### Como entrar no servidor?
